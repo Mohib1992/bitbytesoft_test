@@ -10296,6 +10296,155 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _JobCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./JobCard */ "./resources/views/components/JobCard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    job_card: _JobCard__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  data: function data() {
+    return {
+      jobList: [{
+        id: 1,
+        title: 'title',
+        description: 'this is description',
+        created_at: '23/23/2333',
+        company: 'abcd'
+      }, {
+        id: 2,
+        title: 'title 2',
+        description: 'this is description',
+        created_at: '23/23/2333',
+        company: 'abcd'
+      }, {
+        id: 3,
+        title: 'title 2',
+        description: 'this is description',
+        created_at: '23/23/2333',
+        company: 'abcd'
+      }, {
+        id: 4,
+        title: 'title 2',
+        description: 'this is description',
+        created_at: '23/23/2333',
+        company: 'abcd'
+      }],
+      info: null,
+      loading: true,
+      errored: false
+    };
+  },
+  mounted: function mounted() {// const headers = {};
+    // axios
+    //     .get('https://paikat.te-palvelut.fi/tpt-api/tyopaikat?englanti=true', { headers })
+    //     .then(response => {
+    //         this.info = response.data.bpi
+    //     })
+    //     .catch(error => {
+    //         console.log(error)
+    //         this.errored = true
+    //     })
+    //     .finally(() => this.loading = false)
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/JobCard.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/JobCard.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -10303,11 +10452,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  computed: {},
-  data: function data() {
-    return {
-      message: 'Hello World'
-    };
+  name: "job_card",
+  props: {
+    title: {
+      required: true,
+      type: String
+    },
+    description: {
+      required: true,
+      type: String
+    },
+    created_at: {
+      required: true,
+      type: String
+    },
+    company: {
+      required: true,
+      type: String
+    }
+  },
+  methods: {
+    showLongDescription: function showLongDescription() {
+      console.log('show long description');
+    }
   }
 });
 
@@ -27826,6 +27993,45 @@ component.options.__file = "resources/views/components/App.vue"
 
 /***/ }),
 
+/***/ "./resources/views/components/JobCard.vue":
+/*!************************************************!*\
+  !*** ./resources/views/components/JobCard.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _JobCard_vue_vue_type_template_id_30cafa66_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./JobCard.vue?vue&type=template&id=30cafa66&scoped=true& */ "./resources/views/components/JobCard.vue?vue&type=template&id=30cafa66&scoped=true&");
+/* harmony import */ var _JobCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./JobCard.vue?vue&type=script&lang=js& */ "./resources/views/components/JobCard.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _JobCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _JobCard_vue_vue_type_template_id_30cafa66_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _JobCard_vue_vue_type_template_id_30cafa66_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "30cafa66",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/views/components/JobCard.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/views/components/App.vue?vue&type=script&lang=js&":
 /*!*********************************************************************!*\
   !*** ./resources/views/components/App.vue?vue&type=script&lang=js& ***!
@@ -27839,6 +28045,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/App.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/views/components/JobCard.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/views/components/JobCard.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JobCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JobCard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/JobCard.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_JobCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -27859,6 +28081,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/views/components/JobCard.vue?vue&type=template&id=30cafa66&scoped=true&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/views/components/JobCard.vue?vue&type=template&id=30cafa66&scoped=true& ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JobCard_vue_vue_type_template_id_30cafa66_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JobCard_vue_vue_type_template_id_30cafa66_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_JobCard_vue_vue_type_template_id_30cafa66_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./JobCard.vue?vue&type=template&id=30cafa66&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/JobCard.vue?vue&type=template&id=30cafa66&scoped=true&");
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/App.vue?vue&type=template&id=2e4f0281&":
 /*!******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/App.vue?vue&type=template&id=2e4f0281& ***!
@@ -27875,10 +28114,176 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", [_vm._v("This is vue")]),
-    _vm._v("\n    " + _vm._s(_vm.message) + "\n")
+  return _c("div", { staticClass: "flex h-screen bg-gray-100 font-roboto" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "flex-1 flex flex-col overflow-hidden" }, [
+      _c("main", { staticClass: "flex-1 overflow-x-hidden overflow-y-auto" }, [
+        _c("div", { staticClass: "px-6 py-8" }, [
+          _c(
+            "div",
+            { staticClass: "grid col-span-1" },
+            _vm._l(_vm.jobList, function(job) {
+              return _c(
+                "div",
+                { key: job.id, staticClass: "flex w-screen mb-2" },
+                [
+                  _c("job_card", {
+                    attrs: {
+                      title: job.title,
+                      description: job.description,
+                      created_at: job.created_at,
+                      company: job.company
+                    }
+                  })
+                ],
+                1
+              )
+            }),
+            0
+          )
+        ])
+      ])
+    ])
   ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "bg-white w-1/3 z-30" }, [
+      _c("div", { staticClass: "flex items-center justify-center mt-8" }, [
+        _c("form", { staticClass: "mb-4 pt-6 px-16 rounded w-full" }, [
+          _c("div", { staticClass: "mb-4" }, [
+            _c("input", {
+              staticClass:
+                "border border-blue-200 leading-tight px-3 py-2 rounded shadow text-gray-700 w-full",
+              attrs: {
+                id: "username",
+                type: "text",
+                placeholder: "Search Jobs...."
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass:
+                "bg-blue-500 float-right hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
+              attrs: { type: "button" }
+            },
+            [_vm._v("\n                    Search\n                ")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c("form", { staticClass: "mb-4 pt-6 px-16 rounded w-full" }, [
+          _c(
+            "select",
+            {
+              staticClass:
+                "mb-2 border border-blue-200 leading-tight px-3 py-2 rounded shadow text-gray-700 w-full",
+              attrs: { name: "attribute" }
+            },
+            [
+              _c("option", { attrs: { value: "0" } }, [_vm._v("Job Title")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "0" } }, [_vm._v("Company")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "0" } }, [_vm._v("Posted At")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass:
+                "border border-blue-200 leading-tight px-3 py-2 rounded shadow text-gray-700 w-full",
+              attrs: { name: "attribute" }
+            },
+            [
+              _c("option", { attrs: { value: "desc" } }, [_vm._v("Desc")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "asc" } }, [_vm._v("Asc")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass:
+                "mt-2 bg-blue-500 float-right hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
+              attrs: { type: "button" }
+            },
+            [_vm._v("\n                    Sort\n                ")]
+          )
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/JobCard.vue?vue&type=template&id=30cafa66&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/views/components/JobCard.vue?vue&type=template&id=30cafa66&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass:
+        "border border-blue-300 md:w-2/5 p-3 rounded-xl shadow-md space-y-3"
+    },
+    [
+      _c("section", { staticClass: "text-sm font-thin" }, [
+        _vm._v("\n        " + _vm._s(_vm.created_at) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "text-3xl font-bold" }, [
+        _vm._v("\n        " + _vm._s(_vm.title) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "font-normal text-md text-gray-400" }, [
+        _vm._v("\n        " + _vm._s(_vm.description) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "font-bold text-lg text-blue-500" }, [
+        _vm._v("\n        " + _vm._s(_vm.company) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "flex justify-end" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-blue-500 float-right hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline",
+            attrs: { type: "button" },
+            on: { click: _vm.showLongDescription }
+          },
+          [_vm._v("\n            Read more\n        ")]
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
