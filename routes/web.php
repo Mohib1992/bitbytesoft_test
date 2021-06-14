@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/syncData', 'HomeController@index');
+Route::get('/search/{:any}', 'HomeController@search');
+Route::get('/sort/{:any}', 'HomeController@sort');
