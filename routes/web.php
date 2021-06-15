@@ -18,5 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/syncData', 'HomeController@index');
-Route::get('/search/{:any}', 'HomeController@search');
-Route::get('/sort/{:any}', 'HomeController@sort');
+Route::get('/jobs', 'HomeController@getData');

@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 
 use App\JobListing;
 use GuzzleHttp\Client;
-use http\Env\Request;
-use Illuminate\Queue\Jobs\Job;
+use Illuminate\Http\Request;
+use Illuminate\Pagination\Paginator;
 
 class HomeController extends Controller
 {
@@ -26,11 +26,6 @@ class HomeController extends Controller
         }
 
         foreach (array_chunk($data->response->docs, 10) as $rows) {
-
-            if (JobListing::whereIn('reference_id', array_column($rows, 'id'))->get()) {
-                continue;
-            }
-
             array_walk($rows, function ($job) {
                 $data = JobListing::firstOrCreate(['reference_id' => $job->id], [
                     'title' => $job->otsikko,
@@ -45,13 +40,34 @@ class HomeController extends Controller
         return response(['message' => count(JobListing::all()).' Records created'], 200);
     }
 
-    public function search(Request $request)
+    public function getData(Request $request)
     {
-
+        return $this->parseData($request);
     }
 
-    public function sort(Request $request)
+    private function parseData($params)
     {
+        $jobs = JobListing::query();
 
+        if ($params->get('query')) {
+            $jobs->where('title', 'like', '%'.$params->get('query').'%');
+        }
+
+        if (!$params->get('field') && !$params->get('orderBy')) {
+            $jobs->orderBy('title', 'desc');
+        } else {
+            $jobs->orderBy($params->get('field'), $params->get('orderBy'));
+        }
+
+        if (!$jobs)
+            return response(404);
+
+        $result = $jobs->paginate(20, ['*'], 'page', (int) $params->get('page') ?: 1);
+
+        if ($result->total() <= 20) {
+            $result = $jobs->paginate(20, ['*'], 'page', 1);
+        }
+
+        return response($result , 200);
     }
 }

@@ -24,5 +24,10 @@ class JobListingTest extends TestCase
             ->assertOk();
     }
 
-
+    public function guest_can_search()
+    {
+        $this->json('GET', '/jobs?query=Developer&field=posted_at&orderBy=asc&page=2')
+            ->assertJsonStructure(['data'])
+            ->assertOk();
+    }
 }
